@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title>Registrartion Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-center" style="background-color:powderblue;">
+  <form id="user-form" method="post" class="my-10">
+    <div class="border-2 border-blue-400 rounded-lg p-5 mx-auto w-1/2">
+      <h1 class="text-red-400 text-3xl font-bold mb-5">REGISTRATION DETAILS</h1>
+      <div class="grid grid-cols-1 gap-3">
+        <label class="text-left font-bold" for="name">Name:</label>
+        <input required type="text" id="name" name="name" class="w-50 border-2 border-gray-200 p-2 rounded-lg">
+        <label class="text-left font-bold" for="email">Email:</label>
+    <input required type="email" id="email" name="email" class="w-50 border-2 border-gray-200 p-2 rounded-lg">
+
+    <label class="text-left font-italic" for="password">Password:</label>
+    <input required type="password" id="password" name="password" class="w-50 border-2 border-gray-200 p-2 rounded-lg">
+
+    <label class="text-left font-italic" for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" class="w-50 border-2 border-gray-200 p-2 rounded-lg">
+
+    <div class="flex items-center mt-5">
+      <input type="checkbox" name="acceptTerms" id="acceptTerms" class="mr-2">
+      <label for="acceptTerms" class="text-left">Please confirm that you agree to our terms and conditions.</label>
+    </div>
+
+    <button required type="submit" class="mt-5 w-50 bg-gradient-to-r from-yellow-500 to-blue-400 text-white p-2 rounded-md shadow-lg hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50">Submit</button>
+  </div>
+</div>
+</form>
+<div class="border-2 border-yellow-500 relative bg-white px-4 mt-5 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:rounded-lg sm:px-10">
+  <div class="mx-auto">
+    <h2 class="text-xl text-center font-bold leading-right">Entries</h2>
+    <div class="divide-y divide-gray-300/50" id="user-entries"></div>
+  </div>
+</div>
+<script src="indexc.js"></script>
+</body>
+</html>
